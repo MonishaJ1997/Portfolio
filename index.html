@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+  font-family:'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
+  
+}
+
+.logo{
+    
+  color:black ;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header {
+
+       height: 50px;
+      display: flex;
+justify-content: space-between;
+background-color: blueviolet;
+padding: 20px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;}
+  
+.nav-links  a {
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+.nav-links a:hover{
+    color: red;
+}
+
+.container {
+      display: flex;
+      align-items: center; 
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .text-content {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .image-content {
+      flex: 1;
+      text-align: right;
+    }
+
+    .image-content img {
+      width: 200px;
+      height:200px;
+      border-radius: 50%;
+      border: 3px solid blueviolet;
+
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .text-content,
+      .image-content {
+        padding: 10px;
+        text-align: center;
+      }
+    }
+
+    .hero {
+  height: 80vh;
+ 
+ 
+ 
+ 
+ 
+
+}
+
+
+section {
+      display: none;
+      padding: 40px;
+    }
+
+    .hero {
+      display: block; 
+      background: #f4f4f4;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero h1 {
+  font-size:40px;
+  color: black;
+}
+
+.hero h3 {
+  font-size: 20px;
+  color:black;
+}
+button{
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+section {
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+      
+  <header>
+    
+      <div class="logo">Monisha</div>
+      
+      
+      
+        
+        <nav>
+          <div class="nav-links">
+          <a onclick="showSection('home')">Home</a>
+          <a  onclick="showSection('about')">About</a>
+           <a onclick="showSection('learning')" >Learning</a> 
+          <a  onclick="showSection('education') ">Education</a>
+        <a onclick="showSection('contact')">Contact</a>
+            <div>
+            </nav>
+          
+          
+          
+          
+          
+        
+    
+  </header>
+      
+  <section id="home" class="hero">
+    
+      <div class="container">
+        <div class="image-content">
+        <img src="monisha.jpg" alt="Monisha">
+      </div>
+  <div class="text-content">
+    <h1>Hello, I'm <span style="color: blueviolet";>Monisha</h1>
+    <h3>BA Graduate | Aspiring Web Developer</h3>
+  <button type="submit">Hire me</button>
+  </div>
+      </div>
+  </section>
+      
+  
+  
+  
+  
+  <section id="about">
+    <h2>About Me</h2>
+       <p>
+        Hello! I'm a Bachelor of Arts graduate with a passion for learning and self-development. 
+        While my academic background is rooted in the humanities, I've recently discovered a strong interest in technology, especially web development.
+      </p>
+    
+      <p>
+        I started learning HTML and CSS to understand how websites work, and I've really enjoyed the process of creating structure and style using code. 
+        I believe that combining creativity with logic is a powerful way to solve problems and build meaningful digital experiences.
+      </p>
+    
+      <p>
+        My current focus is on building a solid foundation in front-end development. 
+        I'm learning through tutorials, small practice projects, and by building this very portfolio site. 
+        I'm also exploring tools like Visual Studio Code and GitHub to improve my workflow.
+      </p>
+    
+      <p>
+        Now I am learning JavaScript and move toward building fully interactive websites and applications. 
+        I'm excited about opportunities where I can continue learning, collaborate with others, and grow into a professional front-end developer.
+      </p>
+    
+      <p>
+        Outside of coding, I enjoy reading, writing, and learning new things. I believe in continuous growth and am always curious about how technology shapes the world.
+      </p>
+    </section>
+    </section>
+
+  <section id="learning">
+    <h2>What I'm Learning</h2>
+    <ul>
+      <li> <b>HTML:</b> Structuring webpages using elements and semantic tags</li>
+      <li><b> CSS:</b> Styling and creating responsive layouts</li>
+      <li> <b>JavaScript:</b> Adding interactivity to websites (next goal)</li>
+    </ul>
+    <p>I follow online tutorials, build small practice projects, and read documentation regularly. 
+       I believe in learning by doing, and I'm excited to build my first full website soon!</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <table border="1">
+        <tr>
+            <th>Course</th><th>Institute</th><th>Year</th><th>Result</th>
+        </tr>
+        <tr>
+            <td>BA</td><td>Udaya college of Arts and Science,Ammandivilai.</td><td>2018</td><td>70%</td>
+        </tr>
+        <td>12th</td><td>VMHSS School,Vaikundapuram.</td><td>2015</td><td>85%</td></tr>
+        <tr><td>10th</td><td>VMHSS School,Vaikundapuram</td><td>2013</td><td>90%</td></tr>
+    </table>
+            
+  </section>
+
+  <section id="contact">
+    <footer>
+    <h2>Contact Me</h2>
+    <p>If you'd like to connect or learn more about my journey, feel free to reach out!</p>
+    <p><strong>Email:</strong> <a href="jkmonisha97@gmail.com">jkmonisha97@gmail.com</a></p>
+    <p><strong>Mobile no:</strong>7904485170
+    </footer>
+  </section>
+  
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block'; 
+    }
+  </script>
+  
+  
+  
+  
+  
+  
+  
+    </body>
+    </html>
+</body>
+</html>
